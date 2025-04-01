@@ -1,54 +1,17 @@
 # 3) Modify the following code so that it outputs the correct values.
+# The amount of gas left in a gas tank decreases as a car drives. An equation that models
+# this scenario is y = -0.75x + 50, where y is the gas in litres and x is the number of
+# kilometers driven.
 
-x = input("Please enter the first number:")
-y = input("Please enter the second number:")
+x = int(input("Please enter the number of kilometers driven:"))
 
-# Prompt the user to choose the type of prism
-print("Choose the type of prism:")
-print("1. Rectangular-based triangular prism")
-print("2. Square-based triangular prism")
+y = -0.07*x+50
 
-choice = input("Enter 1 or 2: ")
+print(f"The car has {y} litres left in the tank after driving {x} kilometers. ")
 
-# Rectangular-based triangular prism
-if choice == '1':
-    # Input dimensions for the rectangular-based triangular prism
-    length = float(input("Enter the length of the prism: "))
-    width = float(input("Enter the width of the base (rectangular side): "))
-    height = float(input("Enter the height of the triangular base: "))
+# Using the code above as a template complete the following word problem. Bonus points if you alter the
+# code so that it only accepts a range of x values that make physical sense.
 
-    # Surface area of rectangular-based triangular prism
-    area_triangle = 0.5 * width * height  # Area of the triangle base
-    perimeter_triangle = width + 2 * ((height ** 2 + (width / 2) ** 2) ** 0.5)  # Perimeter of the triangle base
-    surface_area = 2 * area_triangle + perimeter_triangle * length
-
-    # Volume of rectangular-based triangular prism
-    volume = area_triangle * length
-
-    # Output the results
-    print(f"\nRectangular-based triangular prism:")
-    print(f"Surface Area: {surface_area:.2f}")
-    print(f"Volume: {volume:.2f}")
-
-# Square-based triangular prism
-elif choice == '2':
-    # Input dimensions for the square-based triangular prism
-    side = float(input("Enter the side length of the square base: "))
-    height = float(input("Enter the height of the triangular base: "))
-    length = float(input("Enter the length of the prism: "))
-
-    # Surface area of square-based triangular prism
-    area_triangle = 0.5 * side * height  # Area of the triangle base
-    perimeter_triangle = 3 * side  # Perimeter of the triangle base (since it's equilateral)
-    surface_area = 2 * area_triangle + perimeter_triangle * length
-
-    # Volume of square-based triangular prism
-    volume = area_triangle * length
-
-    # Output the results
-    print(f"\nSquare-based triangular prism:")
-    print(f"Surface Area: {surface_area:.2f}")
-    print(f"Volume: {volume:.2f}")
-
-else:
-    print("Invalid choice! Please run the program again and select either 1 or 2.")
+# A basket of apples is slowly being devoured by ants. If the basket has an initial value of 15 apples and the ants
+# consume the apples at a rate of 0.5 apples per hour, create a program that outputs the number of apples remaining
+# after x number of hours have pased.

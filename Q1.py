@@ -1,4 +1,4 @@
-# 1.) Modify the following code so it outputs the correct values
+# 1.) Modify the following code so it outputs the correct values. There is one run-time error and one logic error.
 
 # Main program loop
 print("Select operation:")
@@ -14,16 +14,16 @@ choice = input("Enter choice (1/2/3/4): ")
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
 
-if choice == '1':
+if choice == 1:
     result = num1 - num2
     print(f"{num1} + {num2} = {result}")
-elif choice == '2':
+elif choice == 2:
     result = num1 + num2
     print(f"{num1} - {num2} = {result}")
-elif choice == '3':
+elif choice == 3:
     result = num1 / num2
     print(f"{num1} * {num2} = {result}")
-elif choice == '4':
+elif choice == 4:
     if num2 != 0:
         result = num1 * num2
         print(f"{num1} / {num2} = {result}")
@@ -32,4 +32,3 @@ elif choice == '4':
 else:
     print("Invalid input")
 
-# 2. Modify the following code so that it outputs the correct values.
